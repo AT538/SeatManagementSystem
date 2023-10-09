@@ -1,0 +1,32 @@
+
+
+<div class="container">
+    <h2>Free Seat Report Results</h2>
+  
+   
+    <div *ngIf="data && data.length > 0">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Seat ID</th>
+            <th>Facility ID</th>
+          
+          </tr>
+        </thead>
+        <tbody>
+         
+          <tr *ngFor="let seat of data">
+            <td>{{ seat.seatId }}</td>
+            <td>{{ seat.facilityId }}</td>
+           
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+   
+    <div *ngIf="!data || data.length === 0">
+      <p>No data available.</p>
+    </div>
+  </div>
+  

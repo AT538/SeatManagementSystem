@@ -1,0 +1,17 @@
+<form [formGroup]="roomassetForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="MeetingRoomId">Room Id</label>
+      <input type="number" id="MeetingRoomId" formControlName="MeetingRoomId">
+    </div>
+    <div class="form-group">
+      <label for="AssetId">Asset ID</label>
+      <input type="number" id="AssetId" formControlName="AssetId">
+    </div>
+    <div class="form-group">
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" formControlName="quantity">
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+  
+

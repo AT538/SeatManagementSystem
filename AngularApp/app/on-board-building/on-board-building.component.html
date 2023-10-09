@@ -1,0 +1,12 @@
+<form [formGroup]="buildingForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="BuildingName">Building Name</label>
+      <input type="text" id="BuildingName" formControlName="BuildingName" />
+    </div>
+    <div class="form-group">
+      <label for="BuildingAbbreviation">Building Abbreviation</label>
+      <input type="text" id="BuildingAbbreviation" formControlName="BuildingAbbreviation" />
+    </div>
+    
+    <button type="submit">Submit</button>
+  </form>

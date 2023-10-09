@@ -1,0 +1,32 @@
+<form [formGroup]="freeSeatReportForm" (ngSubmit)="onSubmit()">
+ <!-- <div class="form-group">
+    <label for="Id">City</label>
+    <input type="text" id="Id" formControlName="Id" />
+  </div>-->
+  <div class="form-group">
+      <label for="City">City</label>
+      <input type="text" id="City" formControlName="City" />
+    </div>
+    <div class="form-group">
+      <label for="Building">Building</label>
+      <input type="text" id="Building" formControlName="Building" />
+    </div>
+    <div class="form-group">
+      <label for="Facility">Facility</label>
+      <input type="text" id="Facility" formControlName="Facility" />
+    </div>
+    <div class="form-group">
+      <label for="FloorNumber">Floor Number</label>
+      <input type="number" id="FloorNumber" formControlName="FloorNumber" />
+    </div>
+    <div class="form-group">
+        <label for="Page">Page</label>
+        <input type="number" id="Page" formControlName="Page" />
+      </div>
+      <div class="form-group">
+        <label for="PageSize">Page Size</label>
+        <input type="number" id="PageSize" formControlName="PageSize" />
+      </div>
+    <button type="submit">Generate Report</button>
+  </form>
+  

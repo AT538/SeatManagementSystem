@@ -1,0 +1,12 @@
+<form [formGroup]="seatForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="TotalSeats">TotalSeats</label>
+    <input type="number" id="TotalSeats" formControlName="TotalSeats">
+  </div>
+    <div class="form-group">
+      <label for="FacilityId">Facility ID</label>
+      <input type="number" id="FacilityId" formControlName="FacilityId">
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+  

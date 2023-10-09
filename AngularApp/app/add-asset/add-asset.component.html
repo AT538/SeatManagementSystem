@@ -1,0 +1,15 @@
+<form [formGroup]="AssetForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="AssetName">Asset Name</label>
+      <input type="text" id="AssetName" formControlName="AssetName">
+      <div *ngIf="AssetForm?.get('AssetName')?.touched && AssetForm?.get('AssetName')?.errors">
+        <div *ngIf="AssetForm?.get('AssetName')?.hasError('required')">Asset Name is required.</div>
+        <div *ngIf="AssetForm?.get('AssetName')?.hasError('pattern')">Asset Name must contain only alphanumeric characters.</div>
+      </div>
+      
+    </div>
+    
+    <button type="submit">Submit</button>
+  </form>
+  
+

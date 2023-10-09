@@ -1,0 +1,12 @@
+<form [formGroup]="seatallocationForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="seatId">Seat Id</label>
+      <input type="number" id="seatId" formControlName="seatId">
+    </div>
+    <div class="form-group">
+      <label for="employeeId">Employee ID</label>
+      <input type="number" id="employeeId" formControlName="employeeId">
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+  

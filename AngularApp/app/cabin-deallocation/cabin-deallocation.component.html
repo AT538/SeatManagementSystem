@@ -1,0 +1,10 @@
+<form [formGroup]="cabindeallocationForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="cabinId">Cabin Id</label>
+      <input type="number" id="cabinId" formControlName="cabinId">
+    </div>
+    
+    <button type="submit">Submit</button>
+  </form>
+  
+
